@@ -1,0 +1,70 @@
+<header>
+    <nav class="blue darken-2">
+        <div class="nav-wrapper container">
+            <button data-target="side-nav" class="waves-effect waves-light trigger-element sidenav-trigger" aria-label="menu"><i class="material-icons" aria-label="">menu</i></button>
+            <a href="#" class="brand-logo center">Wager</a>
+
+            <button class="waves-effect waves-light right trigger-element date-trigger" aria-label="Change date"><i class="material-icons" aria-label="Change date">date_range</i></button>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background blue darken-2"></div>
+                    <img src="../../public/logo.png" class="logo-img">
+                <div class="white-text user-container">
+                    <i class="material-icons">account_circle</i>
+                <div class="user-content">
+                    <span class="name">User</span>
+                    <span class="white-text email">user@mail.com</span>
+                </div>
+                </div>
+            </div>
+        </li>
+        <li><a class="subheader">Information</a></li>
+        <li>
+            <a href="#/growth" aria-label="Growth" class="waves-effect sidenav-item about-trigger"><i class="material-icons">show_chart</i>Growth</a>
+        </li>
+        <li>
+            <a href="#/share" aria-label="Share" class="waves-effect sidenav-item about-trigger"><i class="material-icons">people</i>Share</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">App</a></li>
+        <li>
+            <a href="#/save" aria-label="Save app" class="waves-effect sidenav-item about-trigger"><i class="material-icons">get_app</i>Save App</a>
+        </li>
+        <li>
+            <a href="#/setting" aria-label="Setting" class="waves-effect sidenav-item"><i class="material-icons">settings</i>Setting</a>
+        </li>
+        <li>
+            <a href="#/about" aria-label="About" class="waves-effect sidenav-item">
+                <i class="material-icons">info</i>About
+            </a>
+        </li>
+    </ul>
+</header>
+
+<main class="home" id="main-content">
+    <section class="total">
+        <div class="container">
+            <div class="card white">
+                <div class="card-content">
+                    <total-container>
+                    </total-container>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list">
+        <div class="container">
+            <list-container>
+            </list-container>
+        </div>
+    </section>
+
+    <a href="#/add" class="btn-floating btn-large waves-effect waves-light blue darken-3" aria-label="add transaction"><i class="material-icons" aria-label="add transaction">add</i></a>
+</main>

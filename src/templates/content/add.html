@@ -1,0 +1,76 @@
+<header>
+    <nav class="blue darken-2">
+        <div class="nav-wrapper container">
+            <button class="waves-effect waves-light trigger-element back-trigger" aria-label="Back"><i
+                    class="material-icons" aria-label="Back">arrow_back</i></button>
+            <span class="brand-logo center">Add</span>
+        </div>
+    </nav>
+</header>
+
+<main class="add">
+    <section class="input">
+        <div class="container">
+            <div class="row">
+                <div class="card white col s12 m8 l6 offset-m2 offset-l3">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s3">
+                                <span>Name</span>
+                            </div>
+                            <div class="col s1">
+                                <span>:</span>
+                            </div>
+                            <div class="input-field col s8">
+                                <input id="name" type="text" autocomplete="off">
+                                <label for="name">Name</label>
+                            </div>
+
+                            <div class="col s3">
+                                <span>Credit</span>
+                            </div>
+                            <div class="col s1">
+                                <span>:</span>
+                            </div>
+                            <div class="input-field col s8">
+                                <input id="credit" type="number" min="1">
+                                <label for="credit">Credit</label>
+                            </div>
+
+                            <div class="col s3">
+                                <span>Date</span>
+                            </div>
+                            <div class="col s1">
+                                <span>:</span>
+                            </div>
+                            <div class="input-field col s8">
+                                <input type="text" autocomplete="off" class="datepicker" id="date">
+                                <label for="date">Date</label>
+                            </div>
+
+                            <div class="col s3">
+                                <span>Type</span>
+                            </div>
+                            <div class="col s1">
+                                <span>:</span>
+                            </div>
+                            <div class="input-field col s8">
+                                <select id="type">
+                                    <option value="Income">Income</option>
+                                    <option value="Cash">Cash</option>
+                                </select>
+                                <label>Type</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-action">
+                        <button class="waves-effect waves-light blue darken-2 btn" id="add" aria-label="Add transaction">
+                            <i class="material-icons left" aria-label="Add transaction">add</i>Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

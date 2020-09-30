@@ -1,0 +1,344 @@
+@import 'config';
+@import 'utilities';
+
+/* Home */
+
+.sidenav {
+    width: 250px;
+
+    .user-view {
+        .logo-img {
+            width: 4rem;
+            display: block;
+            margin: auto;
+        }
+    
+        .user-container {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+        }
+    
+        .material-icons {
+            font-size: 3rem;
+            margin-right: 1rem;
+        }
+    
+        .name {
+            margin-top: 0;
+        }
+    
+        .email {
+            padding-bottom: 0;
+        }
+    }
+}
+
+main.home {
+    section.total {
+        width: 100%;
+
+        .row {
+            margin-bottom: 0;
+        }
+
+        .total-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 4rem;
+            row-gap: .5rem;
+            text-align: center;
+        }
+
+        .total-item:nth-child(2) {
+            border-left: 1px solid #90a4ae;
+            border-right: 1px solid #90a4ae;
+        }
+    
+        .value {
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        .date {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    section.list {
+        width: 100%;
+
+        list-item {
+            padding: 0;
+        }
+
+        .card-content {
+            padding-top: 12px;
+
+            .header {
+                margin-bottom: 0;
+
+                span {
+                    font-size: .8rem;
+                }
+
+                .balance {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .btn-floating {
+        position: fixed;
+        bottom: 1.3rem;
+        right: 1.3rem;
+        
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    .btn-floating:focus {
+        background-color: #ff4081 !important;
+    }
+}
+
+/* Add, Edit, Setting */
+
+main.add, main.edit, main.setting {
+    span {
+        display: inline-block;
+        width: 100%;
+        line-height: 3rem;
+        margin-top: .5rem;
+        font-size: 1.3rem;
+    }
+
+    .input-field {
+        margin-top: 0;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px 24px 0;
+
+        .row {
+            margin-bottom: 0;
+        }
+    }
+
+    button {
+        display: block;
+        margin: auto;
+    }
+}
+
+/* Detail & Setting */
+
+main.detail, main.setting {
+    .card-action {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    button, a {
+        display: inline-block;
+        width: max-content;
+    }
+}
+
+/*Detail*/
+
+main.detail {
+    span {
+        display: inline-block;
+        width: 100%;
+        line-height: 3rem;
+        margin-top: .5rem;
+        font-size: 1.3rem;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px 24px 0;
+    }
+}
+
+/* Growth */
+
+main.growth {
+    .title, .sub-title {
+        display: block;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .sub-title {
+        font-size: 2rem;
+    }
+
+    section.total {
+        .total-container {
+            box-sizing: border-box;
+            width: 220px;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem auto;
+            border: 5px solid rgba(21, 101, 192, .5);
+
+            .balance-total {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+/* Share */
+
+main.share {
+    background-color: #8bb59d;
+    height: max-content;
+
+    .share {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .share-image {
+        background-color: #8bb59d;
+        color: darken(#668776, 5);
+        max-width: 360px;
+        max-height: 640px;
+        padding: 1rem;
+        margin: 0 auto 2rem;
+        text-align: center;
+
+        h1 {
+            font-size: 3.3rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        img {
+            margin-left: -1rem;
+        }
+
+        .percent-container {
+            width : 150px;
+            height: 150px;
+            background-color: #668776;
+            color: #8bb59d;
+            border-radius: 50%;
+            border: 7px solid lighten(#668776, 7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.3rem;
+            margin: 1rem auto;
+        }
+    }
+
+    button {
+        display: inline-block;
+        max-width: max-content;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Save */
+
+main.save {
+    h1, h2 {
+        margin: 0 0 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Setting */
+
+main.setting {
+    i {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        line-height: 3rem;
+        margin-top: .5rem;
+        font-size: 2.3rem;
+    }
+}
+
+/* About */
+
+main.about {
+    h1, h2 {
+        text-align: center;
+        margin: 0 0 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .card-content {
+        p {
+            text-align: justify;
+        }
+    
+        ul, li {
+            list-style-type: disc !important;
+        }
+    
+        ul {
+            padding: 0 24px;
+        }
+    }
+
+    .card-action {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        
+        a {
+            color: #1565C0 !important;
+        }
+    }
+}
+
+@import 'responsive';

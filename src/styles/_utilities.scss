@@ -1,0 +1,102 @@
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// html,
+// body,
+// main {
+//   height: 100%;
+//   width: 100%;
+// }
+
+// body {
+//   line-height: 1.6;
+// }
+
+hr {
+  margin: .5rem 0;
+  height: 1px;
+  background-color: #90a4ae;
+  border: none;
+}
+
+a {
+  color: #000;
+}
+
+.skip-link {
+  position: absolute;
+  border-radius: 5px;
+  transform: scale(0);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  transform: scale(1);
+}
+
+main {
+  height: 115px;
+  background-color: #1565c0;
+  padding: 1rem 0;
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.trigger-element {
+  color: #fff;
+  background: none;
+  border: none;
+  overflow: hidden;
+}
+
+.trigger-element:focus {
+  background: none;
+  overflow: hidden;
+}
+
+.empty-message-container {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  min-height: 300px;
+  display: flex;
+
+  p {
+    margin: auto;
+    font-size: 1.3rem;
+  }
+}
+
+transaction-item, month-balance {
+  .detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .5rem 0;
+
+      &-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      &-icon {
+          min-width: 34px;
+          min-height: 34px;
+          border-radius: 50%;
+          display: flex;
+          margin: .24rem .5rem 0 0;
+
+          i {
+              margin: auto;
+          }
+      }
+  }
+}
