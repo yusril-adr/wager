@@ -8,6 +8,10 @@
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "graph": "git log --all --oneline --text --decorate --graph"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusril-adr/wager.git"
+  },
   "keywords": [
     "money"
   ],
@@ -21,6 +25,10 @@
     "iOS 7",
     "last 3 iOS versions"
   ],
+  "bugs": {
+    "url": "https://github.com/yusril-adr/wager/issues"
+  },
+  "homepage": "https://github.com/yusril-adr/wager#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
