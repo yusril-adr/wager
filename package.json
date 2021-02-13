@@ -16,7 +16,7 @@
     "money"
   ],
   "author": "Yusril A. P.",
-  "license": "ISC",
+  "license": "MIT",
   "browserslist": [
     "defaults",
     "not ie < 11",
